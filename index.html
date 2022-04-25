@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <script src="script.js"></script>
+       
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
-<body>
-     <h1>Olá mundo!</h1>
+     <style>  
+         *{margin: auto;padding: 0;box-sizing: border-box;} 
+         body
+         {
+          background-color: aqua;   
+         }
+         form
+         {   
+          background-color: darkcyan;
+          max-width: 500px;
+          width: 70%;
+          padding: 30px;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          position: absolute;
+        
+         }
+         form h3
+         {  
+          text-align: center;
+          color: aqua;
+          font-family: Arial, Helvetica, sans-serif
+         }        
+         form input[type=text],
+         form input[type=password]
+         {
+          left: 10%;
+          top: 10%;
+          transform: translate(-2.8%, 7px);   
+          width: 100%;
+          height: 45px;
+          border: 1px solid #ccc;
+          padding-left: 10px;
+          margin: 10px;
+          border-radius: 20px;      
+         }
+         form input[type=submit]
+         {
+          left: 10%;
+          top: 30%;
+          transform: translate(48%, 13px);
+          width: 50%;
+          height: 35px;
+          cursor: pointer;
+          background-color: gainsboro;
+          margin: auto;
+          border: 0;
+          border-radius: 20px;
+          transition: 1s;
+         } 
+         form input[type=submit]:hover
+         {
+          background-color: rgb(255, 255, 255);
+         }
+         form input[type=text]:focus
+         {
+          background-color: rgb(255, 255, 255);
+          outline: 0;
+         }
+         form input[type=password]:focus
+         {
+          background-color: rgb(255, 255, 255);
+          outline: 0;   
+         }
+     </style>
+<body>  
+     <form>
+        <h3>Digite seus dados para acessar: </h3>
+        <input id="Email" type="text" name="Email" placeholder="Digite seu email..." />
+        <input id="passowrd" type="password" name="Senha" placeholder="Digite sua senha..." />
+        <input type="submit" name="acao" value="Enviar" />
+     </form>
+     <h1></h1>
 </body>
 </html>
